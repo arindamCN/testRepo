@@ -1,9 +1,0 @@
-2019-05-24 05:09:04.116+0000 INFO [o.n.u.i.b.ParallelBatchImporter] Import starting
-2019-05-24 05:09:05.656+0000 WARN [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
-2019-05-24 05:09:05.770+0000 WARN [o.n.k.i.s.MetaDataStore] Counts store rebuild completed.
-2019-05-24 05:09:16.112+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 1 to [/instances/70aaaad9-1fe8-46ae-a6b3-10c8c8b8bb4c/data/databases/graph.db/neostore.counts.db.b], from [/instances/70aaaad9-1fe8-46ae-a6b3-10c8c8b8bb4c/data/databases/graph.db/neostore.counts.db.a].
-2019-05-24 05:09:16.119+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 1 to [/instances/70aaaad9-1fe8-46ae-a6b3-10c8c8b8bb4c/data/databases/graph.db/neostore.counts.db.b], from [/instances/70aaaad9-1fe8-46ae-a6b3-10c8c8b8bb4c/data/databases/graph.db/neostore.counts.db.a].
-2019-05-24 05:09:17.294+0000 INFO [o.n.u.i.b.ParallelBatchImporter] Import completed successfully, took 11s 990ms. Imported:
-  2287 nodes
-  6326 relationships
-  58201 properties
