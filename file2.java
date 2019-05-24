@@ -1,52 +1,49 @@
-// In this program, we accepts a file or directory name from  
-// command line arguments. Then the program will check if  
-// that file or directory physically exist or not and  
-// it displays the property of that file or directory. 
-*import java.io.File; 
+// Java program to illustrate 
+// implementing Ennead Class  
+// from Octet Class  
+// using direct values 
   
-// Displaying file property 
-class fileProperty 
-{ 
-    public static void main(String[] args) { 
-        //accept file name or directory name through command line args 
-        String fname =args[0]; 
+import java.util.*; 
+import org.javatuples.*; 
   
-        //pass the filename or directory name to File object 
-        File f = new File(fname); 
+class GfG { 
   
-        //apply File class methods on File object 
-        System.out.println("File name :"+f.getName()); 
-        System.out.println("Path: "+f.getPath()); 
-        System.out.println("Absolute path:" +f.getAbsolutePath()); 
-        System.out.println("Parent:"+f.getParent()); 
-        System.out.println("Exists :"+f.exists()); 
-        if(f.exists()) 
-        { 
-            System.out.println("Is writeable:"+f.canWrite()); 
-            System.out.println("Is readable"+f.canRead()); 
-            System.out.println("Is a directory:"+f.isDirectory()); 
-            System.out.println("File Size in bytes "+f.length()); 
-        } 
-    } 
-    public static void main(String[] args) { 
-        //accept file name or directory name through command line args 
-        String fname =args[0]; 
+    public static void main(String[] args) 
+    { 
+        // Create Octet 
+        Octet<String, String, String, String, String, String, String, String> 
+            octet = new Octet<String, String, String, String, String, String, String, String>( 
+                "Octet", "Septet", "Sextet", "Quintet", "Quartet", "Triplet", "Pair", "Unit"); 
   
-        //pass the filename or directory name to File object 
-        File f = new File(fname); 
+        // Print the Octet 
+        System.out.println("Octet: " + octet); 
   
-        //apply File class methods on File object 
-        System.out.println("File name :"+f.getName()); 
-        System.out.println("Path: "+f.getPath()); 
-        System.out.println("Absolute path:" +f.getAbsolutePath()); 
-        System.out.println("Parent:"+f.getParent()); 
-        System.out.println("Exists :"+f.exists()); 
-        if(f.exists()) 
-        { 
-            System.out.println("Is writeable:"+f.canWrite()); 
-            System.out.println("Is readable"+f.canRead()); 
-            System.out.println("Is a directory:"+f.isDirectory()); 
-            System.out.println("File Size in bytes "+f.length()); 
-        } 
+        // Create Ennead from Octet 
+        Ennead<String, String, String, String, String, String, String, String, String> 
+            ennead = new Ennead<String, String, String, String, String, String, String, String, String>( 
+                "Ennead", 
+                octet.getValue0(), 
+                octet.getValue1(), 
+                octet.getValue2(), 
+                octet.getValue3(), 
+                octet.getValue4(), 
+                octet.getValue5(), 
+                octet.getValue6(), 
+                octet.getValue7());
+
+	Ennead<String, String, String, String, String, String, String, String, String> 
+            ennead = new Ennead<String, String, String, String, String, String, String, String, String>( 
+                "Ennead", 
+                octet.getValue0(), 
+                octet.getValue1(), 
+                octet.getValue2(), 
+                octet.getValue3(), 
+                octet.getValue4(), 
+                octet.getValue5(), 
+                octet.getValue6(), 
+                octet.getValue7());  
+  
+        // Print the Ennead 
+        System.out.println("Ennead: " + ennead); 
     } 
 } 

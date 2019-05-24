@@ -29,7 +29,7 @@ class GfG {
                 octet.getValue4(), 
                 octet.getValue5(), 
                 octet.getValue6(), 
-                octet.getValue7()); 
+                octet.getValue7());
 
 	Ennead<String, String, String, String, String, String, String, String, String> 
             ennead = new Ennead<String, String, String, String, String, String, String, String, String>( 
@@ -41,7 +41,7 @@ class GfG {
                 octet.getValue4(), 
                 octet.getValue5(), 
                 octet.getValue6(), 
-                octet.getValue7()); 
+                octet.getValue7());  
   
         // Print the Ennead 
         System.out.println("Ennead: " + ennead); 
